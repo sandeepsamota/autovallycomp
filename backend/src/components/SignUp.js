@@ -250,13 +250,13 @@ const SignUp = () => {
                                     }}
                                 />
                             </FormControl>
-                            <div className="recaptcha">
+                            {/* <div className="recaptcha">
                                 <ReCAPTCHA
                                     sitekey={Env.RECAPTCHA_SITE_KEY}
                                     hl={language}
                                     onChange={handleOnRecaptchaVerify}
                                 />
-                            </div>
+                            </div> */}
                             <div className="buttons">
                                 <Button
                                     type="submit"
