@@ -55,7 +55,7 @@ div.home footer div.copyright span.part2 {
     div.home div.home-content label.home-logo-main,
     div.home div.home-content label.home-logo-registered {
         float: left;
-        color: #f37022;
+        color: #6E3CBC;
         opacity: .97;
     }
 
@@ -107,7 +107,7 @@ div.home footer div.copyright span.part2 {
         border-radius: 5px;
         height: 52px;
         white-space: nowrap;
-        background: #f37022;
+        background: #6E3CBC;
         color: #fff;
         margin: 10px;
     }
@@ -175,7 +175,7 @@ div.home footer div.copyright span.part2 {
     div.home div.home-content label.home-logo-main,
     div.home div.home-content label.home-logo-registered {
         float: left;
-        color: #f37022;
+        color: #6E3CBC;
         opacity: .97;
     }
 
@@ -186,7 +186,7 @@ div.home footer div.copyright span.part2 {
     }
 
     div.home div.home-content label.home-logo-main:after {
-        content: 'BookCars';
+        content: 'AutoVally';
     }
 
     div.home div.home-content label.home-logo-registered {
@@ -240,7 +240,7 @@ div.home footer div.copyright span.part2 {
         min-width: 100%;
         margin: 0;
         white-space: nowrap;
-        background: #f37022;
+        background: #6E3CBC;
         padding: 5px 32px;
         margin-left: 2px;
     }

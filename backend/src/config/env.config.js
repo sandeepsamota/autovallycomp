@@ -4,18 +4,18 @@ const Env = {
 
     APP_TYPE: process.env.REACT_APP_BC_APP_TYPE || 'backend',
     API_HOST: process.env.REACT_APP_BC_API_HOST,
-    LANGUAGES: ['fr', 'en'],
+    LANGUAGES: ['hi', 'en'],
     _LANGUAGES: [
         {
-            code: 'fr',
-            label: 'Français'
+            code: 'hi',
+            label: 'Hindi'
         },
         {
             code: 'en',
             label: 'English'
         }
     ],
-    DEFAULT_LANGUAGE: process.env.REACT_APP_BC_DEFAULT_LANGUAGE || 'fr',
+    DEFAULT_LANGUAGE: process.env.REACT_APP_BC_DEFAULT_LANGUAGE || 'en',
     PAGE_SIZE: parseInt(process.env.REACT_APP_BC_PAGE_SIZE || 30),
     CARS_PAGE_SIZE: parseInt(process.env.REACT_APP_BC_CARS_PAGE_SIZE || 15),
     BOOKINGS_PAGE_SIZE: parseInt(process.env.REACT_APP_BC_BOOKINGS_PAGE_SIZE || 20),

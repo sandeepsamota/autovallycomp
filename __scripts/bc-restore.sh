@@ -3,7 +3,7 @@
 HOST="localhost"
 PORT=27017
 AUTH_DB="admin"
-USERNAME="admin"
+="admin"
 PASSWORD="PASSWORD"
 echo "Host: ${HOST}"
 DATABASE_NAME="bookcars"
