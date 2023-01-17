@@ -15,30 +15,21 @@ import bookingRoutes from "./routes/bookingRoutes.js";
 const DB_HOST = process.env.BC_DB_HOST;
 const DB_PORT = process.env.BC_DB_PORT;
 const DB_SSL = process.env.BC_DB_SSL.toLowerCase() === "true";
-const DB_SSL_KEY = process.env.BC_DB_SSL_KEY;
-const DB_SSL_CERT = process.env.BC_DB_SSL_CERT;
-const DB_SSL_CA = process.env.BC_DB_SSL_CA;
-const DB_DEBUG = process.env.BC_DB_DEBUG.toLowerCase() === "true";
-const DB_AUTH_SOURCE = process.env.BC_DB_AUTH_SOURCE;
+
 const DB_USERNAME = process.env.BC_DB_USERNAME;
 const DB_PASSWORD = process.env.BC_DB_PASSWORD;
-const DB_APP_NAME = process.env.BC_DB_APP_NAME;
 const DB_NAME = process.env.BC_DB_NAME;
-const DB_URI = `mongodb+srv://sandeepsamota:sandeepsamota@cluster0.e0hzusm.mongodb.net/autovally`;
+const DB_URI = `mongodb+srv://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}.${DB_PORT}/${DB_NAME}`;
 
 let options = {};
 if (DB_SSL) {
   options = {
-    ssl: true,
-    sslValidate: true,
-    sslKey: DB_SSL_KEY,
-    sslCert: DB_SSL_CERT,
-    sslCA: [DB_SSL_CA],
+    useUnifiedTpology: true,
+    useNewUrlParser: true,
   };
 }
 
-mongoose.set("debug", DB_DEBUG);
-mongoose.Promise = global.Promise;
+mongoose.set("strictQuery", true);
 mongoose.connect(DB_URI, options).then(
   () => {
     console.log("Database is connected");
